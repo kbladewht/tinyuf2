@@ -1,6 +1,6 @@
 CFLAGS += \
   -DSTM32F401xC \
-  -DHSE_VALUE=25000000U
+  -DHSE_VALUE=8000000U
 
 SRC_S += \
 	$(ST_CMSIS)/Source/Templates/gcc/startup_stm32f401xc.s
