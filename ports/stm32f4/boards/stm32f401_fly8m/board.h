@@ -29,7 +29,7 @@
 // LED
 //--------------------------------------------------------------------+
 
-#define LED_PORT              GPIOD
+#define LED_PORT              GPIOC
 #define LED_PIN               GPIO_PIN_13
 #define LED_STATE_ON          1
 
@@ -52,7 +52,8 @@
 //--------------------------------------------------------------------+
 
 // Flash size of the board
-#define BOARD_FLASH_SIZE  (512 * 1024)
+#define BOARD_FLASH_SIZE  (256 * 1024)
+#define BOARD_FLASH_SECTORS 6
 
 //--------------------------------------------------------------------+
 // USB UF2
@@ -60,13 +61,15 @@
 
 #define USB_VID           0x239A
 #define USB_PID           0x005D
-#define USB_MANUFACTURER  "ST"
-#define USB_PRODUCT       "STM32F411 Discovery"
+#define USB_MANUFACTURER  "STM32"
+#define USB_PRODUCT       "STM32_401_UF2_BL"
 
 #define UF2_PRODUCT_NAME  USB_MANUFACTURER " " USB_PRODUCT
-#define UF2_BOARD_ID      "STM32F411-Discovery-revA"
-#define UF2_VOLUME_LABEL  "STMF411BOOT"
-#define UF2_INDEX_URL     "https://www.st.com/en/evaluation-tools/32f411ediscovery.html"
+#define UF2_BOARD_ID      "BLADEFLY"
+#define UF2_VOLUME_LABEL  "BLADEFLY"
+#define UF2_INDEX_URL     "https://stm32-base.org/boards/STM32F411CEU6-WeAct-Black-Pill-V2.0.html"
+
+#define USB_NO_VBUS_PIN   1
 
 //--------------------------------------------------------------------+
 // UART
